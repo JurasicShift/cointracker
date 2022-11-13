@@ -1,0 +1,441 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+body {
+    line-height: 1;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+nav ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+a {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color: #ff9;
+    color: #000;
+    text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color: #ff9;
+    color: #000;
+    font-style: italic;
+    font-weight: bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+    border-bottom: 1px dotted;
+    cursor: help;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #cccccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+input,
+select {
+    vertical-align: middle;
+}
+
+/*=========================================
+HEADER STYLES
+=========================================*/
+
+body {
+    min-height: 100vh;
+    color: white;
+    font-size: 20px;
+    font-family: 'Lustria', serif;
+    background-color: rgb(23, 23, 23);
+    overflow: hidden;
+}
+
+.coinHeader {
+    position: relative;
+    top: 0px;
+    height: 175px;
+    width: 100%;
+    border-bottom: 5px solid #ff6800;
+    opacity: 1;
+    transition: 2s;
+
+}
+
+.coinImg {
+    background-image: url("img/coin1.jpg");
+    height: 175px;
+    background-size: cover;
+    background-position: center;
+}
+
+.coinContainer {
+    width: 100%;
+    position: absolute;
+    top: 40%;
+    text-align: center;
+}
+
+.container {
+    margin: 0 20px 0 20px;
+}
+
+.title {
+    position: relative;
+    left: 0px;
+    transition: .75s;
+}
+
+h1.coinTitle {
+    color: #f9f9f9;
+    font-size: 40px;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+
+}
+
+.fa-bitcoin {
+    color: #f9f9f9;
+    font-size: 28px;
+    position: relative;
+    top: -15px;
+    left: 4px;
+
+}
+
+.coinText {
+    color: #f9f9f9;
+    margin-bottom: 40px;
+    line-height: 25px;
+    letter-spacing: 1.5px;
+    transition: 1s;
+    opacity: 1;
+
+}
+
+.fader {
+    opacity: 0;
+}
+
+.btn {
+    position: relative;
+    right: 0px;
+    transition: .75s;
+}
+
+.coinBtn {
+    color: white;
+    background-color: #ff6800;
+    border-radius: 50%;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 22px 22px;
+    text-decoration: none;
+    font-family: inherit;
+    letter-spacing: 2px;
+    border: none;
+    transition-duration: .3s;
+    transition-timing-function: ease-in-out;
+}
+
+.coinBtn2 {
+    background-color: #ff5e00;
+    padding: 25px 25px;
+    font-size: 28px;
+}
+
+
+
+/*====================================
+MEDIA QUERIES
+====================================*/
+
+@media only screen and (min-width: 536px) {
+
+    .coinHeader {
+        height: 225px;
+        border-bottom: 7px solid #ff6800;
+    }
+
+    .coinImg {
+        height: 225px;
+    }
+
+    .coinContainer {
+        top: 37%;
+    }
+
+    .container {
+        margin: 0 40px 0 40px;
+    }
+
+    h1.coinTitle {
+        font-size: 45px;
+        letter-spacing: 2px;
+        margin-bottom: 30px;
+
+    }
+
+    .fa-bitcoin {
+        font-size: 30px;
+    }
+
+    .coinText {
+        font-size: 22px;
+        margin-bottom: 43px;
+        line-height: 28px;
+
+    }
+
+    @media only screen and (min-width: 576px) {
+        .coinHeader {
+            height: 250px;
+        }
+
+        .coinImg {
+            height: 250px;
+        }
+    }
+
+    @media only screen and (min-width: 769px) {
+        .coinHeader {
+            height: 260px;
+        }
+
+        .coinImg {
+            height: 260px;
+        }
+
+        .coinContainer {
+            top: 40%;
+        }
+
+        .container {
+            margin: 0 120px 0 120px;
+        }
+
+        h1.coinTitle {
+            font-size: 60px;
+            letter-spacing: 2px;
+            margin-bottom: 30px;
+
+        }
+
+        .fa-bitcoin {
+            font-size: 33px;
+            top: -25px;
+        }
+
+        .coinText {
+            font-size: 24px;
+            margin-bottom: 43px;
+            line-height: 29px;
+
+        }
+    }
+
+    @media only screen and (min-width: 992px) {
+
+        .coinImg {
+            background-size: 100% 450px;
+        }
+
+        .coinContainer {
+            top: 43%;
+        }
+
+        .container {
+            margin: 0 210px 0 210px;
+        }
+
+        h1.coinTitle {
+            font-size: 63px;
+            letter-spacing: 2.5px;
+            margin-bottom: 35px;
+        }
+
+        .coinText {
+            font-size: 24px;
+            margin-bottom: 45px;
+            line-height: 29px;
+        }
+
+        .coinBtn {
+            padding: 24px 24px;
+            font-size: 27px;
+        }
+
+        .coinBtn2 {
+            padding: 27px 27px;
+            font-size: 30px;
+        }
+    }
+
+    @media only screen and (min-width: 1200px) {
+
+        .coinImg {
+            background-size: 100% 450px;
+        }
+
+        h1.coinTitle {
+            font-size: 65px;
+        }
+
+        .container {
+            margin: 0 320px 0 320px;
+        }
+
+        .coinText {
+            font-size: 25px;
+            margin-bottom: 45px;
+            line-height: 30px;
+        }
+
+    }
+
+    @media only screen and (min-width: 1400px) {
+
+        .coinImg {
+            background-size: 100% 550px;
+        }
+
+        .container {
+            margin: 0 400px 0 400px;
+        }
+
+
+    }
