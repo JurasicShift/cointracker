@@ -1,0 +1,25 @@
+{
+  "name": "tracker",
+  "version": "1.0.0",
+  "description": "bitcointracker",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JurasicShift/cointracker.git"
+  },
+  "author": "Mick Whyte",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JurasicShift/cointracker/issues"
+  },
+  "homepage": "https://github.com/JurasicShift/cointracker#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "node-fetch": "^3.3.0"
+  }
+}
