@@ -75,17 +75,17 @@ time,
 mark,
 audio,
 video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: 0;
-    font-size: 100%;
-    vertical-align: baseline;
-    background: transparent;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
 }
 
 body {
-    line-height: 1;
+	line-height: 1;
 }
 
 article,
@@ -99,77 +99,77 @@ hgroup,
 menu,
 nav,
 section {
-    display: block;
+	display: block;
 }
 
 nav ul {
-    list-style: none;
+	list-style: none;
 }
 
 blockquote,
 q {
-    quotes: none;
+	quotes: none;
 }
 
 blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-    content: '';
-    content: none;
+	content: '';
+	content: none;
 }
 
 a {
-    margin: 0;
-    padding: 0;
-    font-size: 100%;
-    vertical-align: baseline;
-    background: transparent;
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
 }
 
 /* change colours to suit your needs */
 ins {
-    background-color: #ff9;
-    color: #000;
-    text-decoration: none;
+	background-color: #ff9;
+	color: #000;
+	text-decoration: none;
 }
 
 /* change colours to suit your needs */
 mark {
-    background-color: #ff9;
-    color: #000;
-    font-style: italic;
-    font-weight: bold;
+	background-color: #ff9;
+	color: #000;
+	font-style: italic;
+	font-weight: bold;
 }
 
 del {
-    text-decoration: line-through;
+	text-decoration: line-through;
 }
 
 abbr[title],
 dfn[title] {
-    border-bottom: 1px dotted;
-    cursor: help;
+	border-bottom: 1px dotted;
+	cursor: help;
 }
 
 table {
-    border-collapse: collapse;
-    border-spacing: 0;
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
 /* change border colour to suit your needs */
 hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #cccccc;
-    margin: 1em 0;
-    padding: 0;
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #cccccc;
+	margin: 1em 0;
+	padding: 0;
 }
 
 input,
 select {
-    vertical-align: middle;
+	vertical-align: middle;
 }
 
 /*=========================================
@@ -177,226 +177,177 @@ HEADER STYLES
 =========================================*/
 
 body {
-    min-height: 100vh;
-    color: #f9f9f9;
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    background-color: rgb(23, 23, 23);
+	min-height: 100vh;
+	color: #f9f9f9;
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	background-color: rgb(23, 23, 23);
 }
 
 .fadeIn {
-    height: 100vh;
-    width: 100%;
-    background-size: cover;
-    background-position: 50% 50%;
-    opacity: 0;
-    transition: opacity 2s ease-in-out;
-    -webkit-backface-visibility: hidden;
-    -webkit-transform: translateZ(0) scale(1.0, 1.0);
-    transform: translateZ(0);
+	height: 100vh;
+	width: 100%;
+	background-size: cover;
+	background-position: 50% 50%;
+	opacity: 0;
+	transition: opacity 2s ease-in-out;
+	-webkit-backface-visibility: hidden;
+	-webkit-transform: translateZ(0) scale(1, 1);
+	transform: translateZ(0);
 }
 
 .pageShow {
-    opacity: 1;
+	opacity: 1;
 }
 
 .header {
-    height: 180px;
-    border-bottom: 5px solid #47CF73;
-    background: linear-gradient(to bottom right, rgb(47, 47, 49), rgb(0, 0, 0));
+	height: 180px;
+	border-bottom: 5px solid #47cf73;
+	background: linear-gradient(to bottom right, rgb(47, 47, 49), rgb(0, 0, 0));
 }
 
 .container {
-    text-align: center;
-    padding: 30px 0 25px 0;
-    margin: 0 15px 0 15px;
+	text-align: center;
+	padding: 30px 0 25px 0;
+	margin: 0 15px 0 15px;
 }
 
 h1.coinTitle {
-    color: #f9f9f9;
-    font-family: 'Lustria', serif;
-    font-size: 40px;
-    letter-spacing: 2px;
+	color: #f9f9f9;
+	font-family: 'Lustria', serif;
+	font-size: 40px;
+	letter-spacing: 2px;
 }
 
 h4.coinSub,
 h4.coinSub2 {
-    color: #f9f9f9;
-    font-family: 'Lustria', serif;
-    font-size: 18px;
-    letter-spacing: 3px;
-    margin-top: 10px;
+	color: #f9f9f9;
+	font-family: 'Lustria', serif;
+	font-size: 18px;
+	letter-spacing: 3px;
+	margin-top: 10px;
 }
 
 h4.coinSub {
-    position: relative;
-    left: -10px;
+	position: relative;
+	left: -10px;
 }
 
 .fa-bitcoin {
-    color: #f9f9f9;
-    font-size: 28px;
-    position: relative;
-    top: -15px;
-    left: 4px;
+	color: #f9f9f9;
+	font-size: 28px;
+	position: relative;
+	top: -15px;
+	left: 4px;
 }
 
 .controls {
-    display: flex;
-    justify-content: center;
-    margin-left: 10px;
-    margin-right: 10px;
+	display: flex;
+	justify-content: center;
+	margin-left: 10px;
+	margin-right: 10px;
 }
 
 .errorText1,
 .errorText2 {
-    text-align: center;
-    color: #47CF73;
-    font-size: 16px;
-    letter-spacing: 1px;
-    opacity: 0;
-    transition: opacity 2s ease-in-out;
-    -webkit-backface-visibility: hidden;
-    -webkit-transform: translateZ(0) scale(1.0, 1.0);
-    transform: translateZ(0);
+	text-align: center;
+	color: #47cf73;
+	font-size: 16px;
+	letter-spacing: 1px;
+	opacity: 0;
+	transition: opacity 2s ease-in-out;
+	-webkit-backface-visibility: hidden;
+	-webkit-transform: translateZ(0) scale(1, 1);
+	transform: translateZ(0);
 }
 
 .errorText1 {
-    margin: 5px 10px 0 10px;
+	margin: 5px 10px 0 10px;
 }
 
 .errorText2 {
-    margin: 10px;
+	margin: 10px;
 }
 
 .errorDisplay {
-    opacity: 1;
-
+	opacity: 1;
 }
 
 /*==================================
 CUSTOM MENU
 ==================================*/
-.customMenu,
-.customMenu2,
-.customMenu3,
-.customMenu4,
-.customMenu5 {
-    text-align: center;
-    width: 120px;
-    margin: 0 5px 0 5px;
-    z-index: 5;
-}
-
-
-.customTitle,
-.customItem,
-.customTitle2,
-.customItem2 {
-    color: #f9f9f9;
-    width: 100px;
-    font-size: 12px;
-    letter-spacing: 1.5px;
-    padding: 8px 6px;
-    background-color: #2C303A;
-}
-
-.customTitle3,
-.customItem3,
-.customTitle4,
-.customItem4,
-.customTitle5,
-.customItem5 {
-    color: #f9f9f9;
-    width: 100px;
-    font-size: 12px;
-    letter-spacing: 1.5px;
-    padding: 8px 6px;
-    background-color: #2C303A;
+.customMenu {
+	text-align: center;
+	width: 120px;
+	margin: 0 5px 0 5px;
+	z-index: 5;
 }
 
 .customTitle,
-.customTitle2 {
-    position: relative;
-    border-radius: 5px;
-    border-top: 2px solid #47CF73;
+.customItem {
+	color: #f9f9f9;
+	width: 100px;
+	font-size: 12px;
+	letter-spacing: 1.5px;
+	padding: 8px 6px;
+	background-color: #2c303a;
 }
 
-.customTitle3,
-.customTitle4,
-.customTitle5 {
-    position: relative;
-    border-radius: 5px;
-    border-top: 2px solid #47CF73;
+.customTitle {
+	position: relative;
+	border-radius: 5px;
+	border-top: 2px solid #47cf73;
 }
 
-#customTitleSpan,
-#customTitleSpan2,
-#customTitleSpan3,
-#customTitleSpan4,
-#customTitleSpan5 {
-    margin-right: 10px;
+.customTitle span {
+	margin-right: 10px;
 }
 
 i.fa-chevron-down {
-    position: absolute;
-    top: 10px;
-    right: 5px;
+	position: absolute;
+	top: 10px;
+	right: 5px;
 }
 
-.customList,
-.customList2,
-.customList3,
-.customList4,
-.customList5 {
-    transform: scale(1, 0);
-    transition: transform 400ms ease-in-out;
-    transform-origin: top;
+.customList {
+	transform: scale(1, 0);
+	transition: transform 400ms ease-in-out;
+	transform-origin: top;
 }
 
 .customListExpand {
-    display: block;
-    transform: scale(1, 1);
-    transform-origin: top;
-    transition: transform 400ms ease-in-out;
+	display: block;
+	transform: scale(1, 1);
+	transform-origin: top;
+	transition: transform 400ms ease-in-out;
 }
 
-
 .customTitle:hover,
-.customItem:hover,
-.customTitle2:hover,
-.customItem2:hover,
-.customTitle3:hover,
-.customItem3:hover,
-.customTitle4:hover,
-.customItem4:hover,
-.customTitle5:hover,
-.customItem5:hover {
-    background-color: #4b505e;
+.customItem:hover {
+	background-color: #4b505e;
 }
 
 .customBorder {
-    border-radius: 0 0 5px 5px;
+	border-radius: 0 0 5px 5px;
 }
 
 .customBorder2 {
-    border-radius: 5px 5px 0 0;
+	border-radius: 5px 5px 0 0;
 }
 
 .btn {
-    height: 30px;
-    color: #000;
-    font-family: inherit;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 50%;
-    letter-spacing: 1.5px;
-    padding: 10px 16px 10px 16px;
-    border-radius: 30px;
-    border: 1px solid #d3d3d3;
-    background-color: #47CF73;
+	height: 30px;
+	color: #000;
+	font-family: inherit;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 50%;
+	letter-spacing: 1.5px;
+	padding: 10px 16px 10px 16px;
+	border-radius: 30px;
+	border: 1px solid #d3d3d3;
+	background-color: #47cf73;
 }
-
 
 /*=======================================
 =======================================*/
@@ -405,29 +356,29 @@ i.fa-chevron-down {
 CLOCK STYLES
 =========================================*/
 .timeContainer {
-    display: flex;
-    justify-content: flex-end;
+	display: flex;
+	justify-content: flex-end;
 }
 
 .clock {
-    padding: 20px 20px 0 20px;
+	padding: 20px 20px 0 20px;
 }
 
 .clock-capital,
 .clock-time,
 .clock-ampm {
-    font-family: sans-serif;
-    color: #eeeeee;
+	font-family: sans-serif;
+	color: #eeeeee;
 }
 
 .clock-capital,
 .clock-ampm {
-    font-size: 16px;
-    letter-spacing: 1.5px;
+	font-size: 16px;
+	letter-spacing: 1.5px;
 }
 
 .clock-time {
-    font-size: 20px;
+	font-size: 20px;
 }
 
 /*===========================================
@@ -437,496 +388,466 @@ CLOCK STYLES
 TRACKER CHART STYLES
 ========================================*/
 .chartContainer {
-    text-align: center;
-    padding: 0 0 30px 0;
-    margin: 0 15px 0 15px;
+	text-align: center;
+	padding: 0 0 30px 0;
+	margin: 0 15px 0 15px;
 }
 
 .marquee {
-    height: 50px;
-    overflow: hidden;
-    position: relative;
+	height: 50px;
+	overflow: hidden;
+	position: relative;
 }
 
 .infoDiv {
-    display: flex;
-    justify-content: space-around;
-    font-size: 14px;
-    letter-spacing: 2px;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    line-height: 50px;
-    text-align: center;
-    -moz-transform: translateX(100%);
-    -webkit-transform: translateX(100%);
-    transform: translateX(100%);
-    -moz-animation: scroll-left 2s linear infinite;
-    -webkit-animation: scroll-left 2s linear infinite;
-    animation: scroll-left 15s linear infinite;
+	display: flex;
+	justify-content: space-around;
+	font-size: 14px;
+	letter-spacing: 2px;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	line-height: 50px;
+	text-align: center;
+	-moz-transform: translateX(100%);
+	-webkit-transform: translateX(100%);
+	transform: translateX(100%);
+	-moz-animation: scroll-left 2s linear infinite;
+	-webkit-animation: scroll-left 2s linear infinite;
+	animation: scroll-left 15s linear infinite;
 }
 
 @-moz-keyframes scroll-left {
-    0% {
-        -moz-transform: translateX(100%);
-    }
+	0% {
+		-moz-transform: translateX(100%);
+	}
 
-    100% {
-        -moz-transform: translateX(-100%);
-    }
+	100% {
+		-moz-transform: translateX(-100%);
+	}
 }
 
 @-webkit-keyframes scroll-left {
-    0% {
-        -webkit-transform: translateX(100%);
-    }
+	0% {
+		-webkit-transform: translateX(100%);
+	}
 
-    100% {
-        -webkit-transform: translateX(-100%);
-    }
+	100% {
+		-webkit-transform: translateX(-100%);
+	}
 }
 
 @keyframes scroll-left {
-    0% {
-        -moz-transform: translateX(100%);
-        -webkit-transform: translateX(100%);
-        transform: translateX(100%);
-    }
+	0% {
+		-moz-transform: translateX(100%);
+		-webkit-transform: translateX(100%);
+		transform: translateX(100%);
+	}
 
-    100% {
-        -moz-transform: translateX(-100%);
-        -webkit-transform: translateX(-100%);
-        transform: translateX(-100%);
-    }
+	100% {
+		-moz-transform: translateX(-100%);
+		-webkit-transform: translateX(-100%);
+		transform: translateX(-100%);
+	}
 }
 
 .infoActive {
-    display: flex;
+	display: flex;
 }
 
 .infoDiv2 {
-    font-size: 14px;
-    letter-spacing: 1.5px;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 6px;
-    border-top: 2px solid #47CF73;
-    margin-bottom: 10px;
-
+	font-size: 14px;
+	letter-spacing: 1.5px;
+	background-color: rgba(255, 255, 255, 0.1);
+	border-radius: 6px;
+	border-top: 2px solid #47cf73;
+	margin-bottom: 10px;
 }
 
 .high,
 .low {
-    display: flex;
+	display: flex;
 }
 
 .coinText {
-    padding: 10px 5px 5px 5px;
+	padding: 10px 5px 5px 5px;
 }
 
 .coinValue {
-    padding: 0px 5px 5px 5px;
+	padding: 0px 5px 5px 5px;
 }
 
 .currentHigh,
 .currentLow {
-    padding: 5px;
+	padding: 5px;
 }
 
 .currentValue {
-    padding: 5px 0;
+	padding: 5px 0;
 }
 
 .positive {
-    color: green;
+	color: green;
 }
 
 .negative {
-    color: red;
+	color: red;
 }
 
 .neutral {
-    color: #0d6efd;
+	color: #0d6efd;
 }
 
 #coinChart {
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 6px;
+	background-color: rgba(255, 255, 255, 0.1);
+	border-radius: 6px;
 }
 
 .courtesyDiv {
-    font-size: 14px;
-    font-family: inherit;
-    margin-top: 10px;
-    letter-spacing: 1px;
+	font-size: 14px;
+	font-family: inherit;
+	margin-top: 10px;
+	letter-spacing: 1px;
+	line-height: 20px;
+	display: flex;
+	justify-content: center;
 }
 
+.courtesyDiv img {
+	height: 20px;
+	width: 20px;
+	margin-left: 5px;
+}
 
-
+.courtesyDiv--marg {
+	margin: 10px 0 25px 0;
+}
 
 /*========================================
 HISTORICAL DATA CHART STYLES
 ========================================*/
 
-
 .header2 {
-    height: 170px;
-    border-top: 5px solid #47CF73;
-    border-bottom: 5px solid #47CF73;
-    background: linear-gradient(to bottom right, rgb(47, 47, 49), rgb(0, 0, 0));
+	height: 170px;
+	border-top: 5px solid #47cf73;
+	border-bottom: 5px solid #47cf73;
+	background: linear-gradient(to bottom right, rgb(47, 47, 49), rgb(0, 0, 0));
 }
 
 .container2 {
-    text-align: center;
-    padding: 25px 0 20px 0;
-    margin: 0 15px 0 15px;
+	text-align: center;
+	padding: 25px 0 20px 0;
+	margin: 0 15px 0 15px;
 }
 
 #compChart {
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 6px;
+	background-color: rgba(255, 255, 255, 0.1);
+	border-radius: 6px;
 }
 
 .btnSpace {
-    margin-right: 8px;
+	margin-right: 8px;
 }
 
 .buttonDiv {
-    display: flex;
-    justify-content: center;
-    padding: 10px;
+	display: flex;
+	justify-content: center;
+	padding: 10px;
 }
 
 .coinInstruct {
-    font-size: 14px;
-    font-family: 'Roboto', sans-serif;
-    color: #f9f9f9;
-    letter-spacing: 1px;
-    line-height: 17px;
-    margin-top: 10px;
-}
-
-.courtesyDiv2 {
-    font-size: 14px;
-    margin: 10px 0 25px 0;
-    letter-spacing: 1px;
+	font-size: 14px;
+	font-family: 'Roboto', sans-serif;
+	color: #f9f9f9;
+	letter-spacing: 1px;
+	line-height: 17px;
+	margin-top: 10px;
 }
 
 .copyDiv {
-    font-size: 18px;
-    letter-spacing: 1px;
-    padding: 30px 0 10px 0;
+	font-size: 18px;
+	letter-spacing: 1px;
+	padding: 30px 0 10px 0;
 }
 
 /*==========================================
 ==========================================*/
-
-
-
 
 /*====================================
 MEDIA QUERIES
 ====================================*/
 
 @media only screen and (min-width: 536px) {
+	.clock {
+		padding: 20px 30px 20px 20px;
+	}
 
-    .clock {
-        padding: 20px 30px 20px 20px;
-    }
+	.errorText1 {
+		margin: 0 10px 0 10px;
+	}
 
-    .errorText1 {
-        margin: 0 10px 0 10px;
-    }
+	.chartContainer {
+		margin: 0 45px 0 45px;
+	}
 
-    .chartContainer {
-        margin: 0 45px 0 45px;
-    }
-
-    .container2 {
-        padding: 25px 10px 20px 10px;
-        margin: 0 25px 0 25px;
-    }
+	.container2 {
+		padding: 25px 10px 20px 10px;
+		margin: 0 25px 0 25px;
+	}
 }
 
 @media only screen and (min-width: 576px) {
+	.clock-capital,
+	.clock-ampm {
+		font-size: 18px;
+		letter-spacing: 1.5px;
+	}
 
-    .clock-capital,
-    .clock-ampm {
-        font-size: 18px;
-        letter-spacing: 1.5px;
-    }
+	.clock-time {
+		font-size: 22px;
+	}
 
-    .clock-time {
-        font-size: 22px;
-    }
+	.chartContainer {
+		margin: 0 55px 0 55px;
+	}
 
-    .chartContainer {
-        margin: 0 55px 0 55px;
-    }
+	.container2 {
+		padding: 25px 30px 20px 30px;
+		margin: 0 25px 0 25px;
+	}
 
-    .container2 {
-        padding: 25px 30px 20px 30px;
-        margin: 0 25px 0 25px;
-    }
-
-    .btnSpace {
-        margin-right: 12px;
-    }
-
-
+	.btnSpace {
+		margin-right: 12px;
+	}
 }
 
 @media only screen and (min-width: 670px) {
-
-    .chartContainer {
-        margin: 0 75px 0 75px;
-    }
-
+	.chartContainer {
+		margin: 0 75px 0 75px;
+	}
 }
 
 @media only screen and (min-width: 769px) {
+	h1.coinTitle {
+		font-size: 45px;
+	}
 
-    h1.coinTitle {
-        font-size: 45px;
-    }
+	h4.coinSub,
+	h4.coinSub2 {
+		font-size: 23px;
+	}
 
-    h4.coinSub,
-    h4.coinSub2 {
-        font-size: 23px;
-    }
+	h4.coinSub {
+		left: -10px;
+	}
 
-    h4.coinSub {
-        left: -10px;
-    }
+	.fa-bitcoin {
+		font-size: 30px;
+	}
 
-    .fa-bitcoin {
-        font-size: 30px;
-    }
+	.clock-capital,
+	.clock-ampm {
+		font-size: 20px;
+	}
 
-    .clock-capital,
-    .clock-ampm {
-        font-size: 20px;
-    }
+	.clock-time {
+		font-size: 25px;
+	}
 
-    .clock-time {
-        font-size: 25px;
-    }
+	.errorText1,
+	.errorText2 {
+		font-size: 20px;
+	}
 
-    .errorText1,
-    .errorText2 {
-        font-size: 20px;
-    }
+	.infoDiv,
+	.infoDiv2 {
+		font-size: 16px;
+	}
 
-    .infoDiv,
-    .infoDiv2 {
-        font-size: 16px;
-    }
+	.chartContainer {
+		margin: 0 95px 0 95px;
+	}
 
-    .chartContainer {
-        margin: 0 95px 0 95px;
-    }
-
-    .container2 {
-        padding: 25px 90px 20px 90px;
-        margin: 0 40px 0 40px;
-    }
-
+	.container2 {
+		padding: 25px 90px 20px 90px;
+		margin: 0 40px 0 40px;
+	}
 }
 
 @media only screen and (min-width: 992px) {
+	.header {
+		height: 195px;
+		border-bottom: 8px solid #47cf73;
+	}
 
-    .header {
-        height: 195px;
-        border-bottom: 8px solid #47CF73;
-    }
+	.clock {
+		padding: 30px 40px 20px 40px;
+	}
 
-    .clock {
-        padding: 30px 40px 20px 40px;
-    }
+	.clock-capital,
+	.clock-ampm {
+		font-size: 22px;
+	}
 
-    .clock-capital,
-    .clock-ampm {
-        font-size: 22px;
-    }
+	.clock-time {
+		font-size: 27px;
+	}
 
-    .clock-time {
-        font-size: 27px;
-    }
+	.infoDiv,
+	.infoDiv2 {
+		font-size: 18px;
+	}
 
-    .infoDiv,
-    .infoDiv2 {
-        font-size: 18px;
-    }
+	.infoDiv2 {
+		border-top: 3px solid #47cf73;
+	}
 
-    .infoDiv2 {
-        border-top: 3px solid #47CF73;
-    }
+	.errorText1,
+	.errorText2 {
+		font-size: 22px;
+	}
 
-    .errorText1,
-    .errorText2 {
-        font-size: 22px;
-    }
+	.chartContainer {
+		margin: 0 120px 0 120px;
+		padding: 0 0 40px 0;
+	}
 
-    .chartContainer {
-        margin: 0 120px 0 120px;
-        padding: 0 0 40px 0;
-    }
+	.container2 {
+		padding: 25px 90px 30px 90px;
+	}
 
-    .container2 {
-        padding: 25px 90px 30px 90px;
-    }
+	.header2 {
+		height: 190px;
+		border-top: 8px solid #47cf73;
+		border-bottom: 8px solid #47cf73;
+	}
 
-    .header2 {
-        height: 190px;
-        border-top: 8px solid #47CF73;
-        border-bottom: 8px solid #47CF73;
-    }
+	.coinInstruct {
+		font-size: 18px;
+		line-height: 20px;
+		margin-top: 15px;
+	}
 
-    .coinInstruct {
-        font-size: 18px;
-        line-height: 20px;
-        margin-top: 15px;
-    }
+	.buttonDiv {
+		padding: 20px 40px 45px 50px;
+	}
 
-    .buttonDiv {
-        padding: 20px 40px 45px 50px;
-    }
-
-    .btnSpace {
-        margin-right: 10px;
-    }
+	.btnSpace {
+		margin-right: 10px;
+	}
 }
 
 @media only screen and (min-width: 1200px) {
+	.header {
+		height: 220px;
+	}
 
-    .header {
-        height: 220px;
-    }
+	.controlPos {
+		margin-right: 50px;
+	}
 
-    .controlPos {
-        margin-right: 50px;
-    }
+	.container {
+		padding: 35px 0 20px 0;
+	}
 
-    .container {
-        padding: 35px 0 20px 0;
-    }
+	h1.coinTitle {
+		font-size: 55px;
+	}
 
-    h1.coinTitle {
-        font-size: 55px;
-    }
+	h4.coinSub,
+	h4.coinSub2 {
+		font-size: 25px;
+	}
 
-    h4.coinSub,
-    h4.coinSub2 {
-        font-size: 25px;
-    }
+	.chartContainer {
+		margin: 0 150px 0 150px;
+	}
 
-    .chartContainer {
-        margin: 0 150px 0 150px;
-    }
+	.customMenu {
+		margin: 0 15px 0 15px;
+	}
 
-    .customMenu,
-    .customMenu2,
-    .customMenu3,
-    .customMenu4,
-    .customMenu5 {
-        margin: 0 15px 0 15px;
-    }
+	.submit1 {
+		margin-left: 15px;
+	}
 
-    .submit1 {
-        margin-left: 15px;
-    }
+	.customTitle,
+	.customItem {
+		font-size: 16px;
+		padding: 10px 15px;
+	}
 
-    .customTitle,
-    .customItem,
-    .customTitle2,
-    .customItem2,
-    .customTitle3,
-    .customItem3,
-    .customTitle4,
-    .customItem4,
-    .customTitle5,
-    .customItem5 {
-        font-size: 16px;
-        padding: 10px 15px;
-    }
+	.customTitle--width,
+	.customItem--width {
+		width: 125px;
+	}
 
-    .customTitle5,
-    .customItem5 {
-        width: 125px;
-    }
+	.btn {
+		height: 35px;
+		font-size: 16px;
+		padding: 12px 25px 12px 25px;
+	}
 
-    .btn {
-        height: 35px;
-        font-size: 16px;
-        padding: 12px 25px 12px 25px;
-    }
-
-    .container2 {
-        padding: 25px 90px 20px 90px;
-    }
+	.container2 {
+		padding: 25px 90px 20px 90px;
+	}
 }
 
 @media only screen and (min-width: 1400px) {
+	h1.coinTitle {
+		font-size: 65px;
+	}
 
-    h1.coinTitle {
-        font-size: 65px;
-    }
+	h4.coinSub,
+	h4.coinSub2 {
+		font-size: 25px;
+	}
 
-    h4.coinSub,
-    h4.coinSub2 {
-        font-size: 25px;
-    }
+	.fa-bitcoin {
+		font-size: 32px;
+		top: -25px;
+	}
 
-    .fa-bitcoin {
-        font-size: 32px;
-        top: -25px;
-    }
+	.customMenu {
+		margin: 0 17px 0 17px;
+	}
 
-    .customMenu,
-    .customMenu2,
-    .customMenu3,
-    .customMenu4,
-    .customMenu5 {
-        margin: 0 17px 0 17px;
-    }
+	.submit1 {
+		margin-left: 17px;
+	}
 
-    .submit1 {
-        margin-left: 17px;
-    }
+	.errorText1,
+	.errorText2 {
+		font-size: 24px;
+	}
 
-    .errorText1,
-    .errorText2 {
-        font-size: 24px;
-    }
-
-    .chartContainer {
-        margin: 0 200px 0 200px;
-    }
+	.chartContainer {
+		margin: 0 200px 0 200px;
+	}
 }
 
 @media only screen and (min-width: 1600px) {
-
-    .chartContainer {
-        margin: 0 250px 0 250px;
-    }
+	.chartContainer {
+		margin: 0 250px 0 250px;
+	}
 }
 
 @media only screen and (min-width: 1700px) {
+	.chartContainer {
+		margin: 0 300px 0 300px;
+	}
 
-    .chartContainer {
-        margin: 0 300px 0 300px;
-    }
+	.clock {
+		padding: 30px 40px 20px 40px;
+	}
 
-    .clock {
-        padding: 30px 40px 20px 40px;
-    }
+	.clock-capital,
+	.clock-ampm {
+		font-size: 25px;
+	}
 
-    .clock-capital,
-    .clock-ampm {
-        font-size: 25px;
-    }
-
-    .clock-time {
-        font-size: 30px;
-    }
+	.clock-time {
+		font-size: 30px;
+	}
 }

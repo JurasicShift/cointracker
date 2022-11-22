@@ -312,7 +312,8 @@ const fetchBitcoinPrice = async () => {
 			},
 		});
 		const data = await response.json();
-		console.log(data);
+		const objKey = Object.keys(data.bitcoin);
+		const price = data.bitcoin[objKey];
 
 		coinInt.textContent = price;
 

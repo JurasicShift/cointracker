@@ -26,12 +26,11 @@ app.get('/currencyfetch', async (req, res) => {
 	const curVal = req.headers.currencyvalue;
 	try {
 		const response = await fetch(
-			`https://api.cryptonator.com/api/ticker/btc-${curVal}`
+			`https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=${curVal}`
 		);
 
-		// const data = await response.json();
-		console.log(response);
-		res.status(200).send(response);
+		const data = await response.json();
+		res.status(200).send(data);
 	} catch (e) {
 		console.log(e);
 		res.status(503).send(e);
