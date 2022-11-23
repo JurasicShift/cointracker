@@ -29,7 +29,7 @@ const customList3 = document.getElementById('customList3');
 const customList4 = document.getElementById('customList4');
 const customList5 = document.getElementById('customList5');
 
-const customItem = document.getElementsByClassName('customItem');
+const customItem1 = document.getElementsByClassName('customItem1');
 const customItem2 = document.getElementsByClassName('customItem2');
 const customItem3 = document.getElementsByClassName('customItem3');
 const customItem4 = document.getElementsByClassName('customItem4');
@@ -47,6 +47,9 @@ const chartToggle = document.getElementById('chartToggle');
 const error1 = document.getElementById('errorText1');
 const error2 = document.getElementById('errorText2');
 
+const resetText1 = document.getElementById('resetText1');
+const resetText2 = document.getElementById('resetText2');
+
 // =================================================
 // INITIALIZATION
 // =================================================
@@ -60,10 +63,20 @@ function initialize() {
 		storageClear();
 		highLowClear();
 		submit1.addEventListener('click', () => {
-			currencySelect1(text);
+			if (!trackInitialised) {
+				currencySelect1(text);
+			} else {
+				errorMessage(resetText1);
+				return;
+			}
 		});
 		submit2.addEventListener('click', () => {
-			compSelect(text);
+			if (!historicalInitialised) {
+				compSelect(text);
+			} else {
+				errorMessage(resetText2);
+				return;
+			}
 		});
 		reset1.addEventListener('click', () => {
 			selectClear();
@@ -98,7 +111,7 @@ function menuLaunch2() {
 }
 
 function menuLaunch3() {
-	currencyChoice(customItem, customTitleSpan);
+	currencyChoice(customItem1, customTitleSpan);
 	currencyChoice(customItem2, customTitleSpan2);
 	currencyChoice2(customItem3, customTitleSpan3);
 	currencyChoice2(customItem4, customTitleSpan4);
@@ -140,6 +153,8 @@ let text2;
 let target;
 let evObj;
 let choiceCount = 0;
+let trackInitialised = false;
+let historicalInitialised = false;
 
 function currencyChoice(item, span) {
 	for (let i = 0; i < item.length; i++) {
@@ -259,6 +274,7 @@ function currencySelect1(text) {
 			coinType.textContent = 'GBP £';
 			clockCapital.textContent = 'London';
 	}
+	trackInitialised = true;
 	currencySelect2(target);
 }
 let time;
@@ -323,12 +339,7 @@ const fetchBitcoinPrice = async () => {
 		dataInputer(coinTracker, price, 0);
 		highLow(resultStore);
 	} catch {
-		error1.classList.add('errorDisplay');
-		setTimeout(() => {
-			error1.classList.remove('errorDisplay');
-			error1.classList.add('errorText');
-			selectClear();
-		}, 4000);
+		errorMessage(error1);
 	}
 };
 
@@ -571,6 +582,7 @@ function compSelect(text) {
 			searchItem = 'United Kingdom';
 			data.datasets[0].label = 'GBP';
 	}
+	historicalInitialised = true;
 	compSelect2(target);
 }
 
@@ -676,13 +688,7 @@ const fetchCurrency = async () => {
 			currencySearch(searchItem, searchItem2);
 		}
 	} catch (e) {
-		error2.classList.add('errorDisplay');
-		setTimeout(() => {
-			error2.classList.remove('errorDisplay');
-			error2.classList.add('errorText');
-			selectClear();
-		}, 4000);
-		console.log(e);
+		errorMessage(error2);
 	}
 };
 
@@ -932,6 +938,8 @@ function selectClear() {
 	coinType.textContent = '';
 	options.title.text = 'Historical Comparison Data';
 	clockCapital.textContent = 'London';
+	trackInitialised = false;
+	historicalInitialised = false;
 	storageClear();
 	highLowClear();
 	valuesClear();
@@ -982,6 +990,23 @@ function arrayCleaner() {
 	newArr = [];
 	newArr2 = [];
 	dateData = [];
+}
+
+// ========================================
+// ERROR MESSAGES
+// ========================================
+
+function errorMessage(el) {
+	el.classList.add('errorDisplay');
+	setTimeout(() => {
+		el.classList.remove('errorDisplay');
+		el.classList.add('errorText');
+		if (el === error1 || el === error2) {
+			selectClear();
+		} else {
+			return;
+		}
+	}, 4000);
 }
 
 // ==========================================

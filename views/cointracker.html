@@ -36,12 +36,12 @@
 						<i class="fas fa-chevron-down"></i>
 					</div>
 					<div class="customList" id="customList">
-						<div class="customItem">Currency</div>
-						<div class="customItem">EUR</div>
-						<div class="customItem">GBP</div>
-						<div class="customItem">JPY</div>
-						<div class="customItem">RUB</div>
-						<div class="customItem customBorder">USD</div>
+						<div class="customItem customItem1">Currency</div>
+						<div class="customItem customItem1">EUR</div>
+						<div class="customItem customItem1">GBP</div>
+						<div class="customItem customItem1">JPY</div>
+						<div class="customItem customItem1">RUB</div>
+						<div class="customItem customItem1 customBorder">USD</div>
 					</div>
 				</div>
 				<div class="customMenu" id="customMenu2">
@@ -50,11 +50,11 @@
 						<i class="fas fa-chevron-down"></i>
 					</div>
 					<div class="customList" id="customList2">
-						<div class="customItem">Interval</div>
-						<div class="customItem">30sec</div>
-						<div class="customItem">1min</div>
-						<div class="customItem">2min</div>
-						<div class="customItem customBorder">5min</div>
+						<div class="customItem customItem2">Interval</div>
+						<div class="customItem customItem2">30sec</div>
+						<div class="customItem customItem2">1min</div>
+						<div class="customItem customItem2">2min</div>
+						<div class="customItem customItem2 customBorder">5min</div>
 					</div>
 				</div>
 				<button type="button" class="btn submit1" id="submit1">Submit</button>
@@ -69,6 +69,9 @@
 		</div>
 		<p class="errorText1" id="errorText1">
 			Oops! Server not responding. Try again later.
+		</p>
+		<p class="errorText1" id="resetText1">
+			Oops! Hit Reset before creating new charts.
 		</p>
 		<div class="chartContainer">
 			<div class="marquee">
@@ -115,11 +118,11 @@
 						<i class="fas fa-chevron-down"></i>
 					</div>
 					<div class="customList" id="customList3">
-						<div class="customItem">Currency</div>
-						<div class="customItem">EUR</div>
-						<div class="customItem">GBP</div>
-						<div class="customItem">JPY</div>
-						<div class="customItem customBorder">CHF</div>
+						<div class="customItem customItem3">Currency</div>
+						<div class="customItem customItem3">EUR</div>
+						<div class="customItem customItem3">GBP</div>
+						<div class="customItem customItem3">JPY</div>
+						<div class="customItem customItem3 customBorder">CHF</div>
 					</div>
 				</div>
 				<div class="customMenu" id="customMenu4">
@@ -128,16 +131,16 @@
 						<i class="fas fa-chevron-down"></i>
 					</div>
 					<div class="customList" id="customList4">
-						<div class="customItem">Year/Avg</div>
-						<div class="customItem">2010</div>
-						<div class="customItem">2011</div>
-						<div class="customItem">2012</div>
-						<div class="customItem">2013</div>
-						<div class="customItem">2014</div>
-						<div class="customItem">2015</div>
-						<div class="customItem">2016</div>
-						<div class="customItem">2017</div>
-						<div class="customItem customBorder">Average</div>
+						<div class="customItem customItem4">Year/Avg</div>
+						<div class="customItem customItem4">2010</div>
+						<div class="customItem customItem4">2011</div>
+						<div class="customItem customItem4">2012</div>
+						<div class="customItem customItem4">2013</div>
+						<div class="customItem customItem4">2014</div>
+						<div class="customItem customItem4">2015</div>
+						<div class="customItem customItem4">2016</div>
+						<div class="customItem customItem4">2017</div>
+						<div class="customItem customItem4 customBorder">Average</div>
 					</div>
 				</div>
 				<div class="customMenu" id="customMenu5">
@@ -146,17 +149,24 @@
 						<i class="fas fa-chevron-down"></i>
 					</div>
 					<div class="customList" id="customList5">
-						<div class="customItem customItem--width">Comparison</div>
-						<div class="customItem customItem--width">EUR</div>
-						<div class="customItem customItem--width">GBP</div>
-						<div class="customItem customItem--width">JPY</div>
-						<div class="customItem customItem--width customBorder">CHF</div>
+						<div class="customItem customItem5 customItem--width">
+							Comparison
+						</div>
+						<div class="customItem customItem5 customItem--width">EUR</div>
+						<div class="customItem customItem5 customItem--width">GBP</div>
+						<div class="customItem customItem5 customItem--width">JPY</div>
+						<div class="customItem customItem5 customItem--width customBorder">
+							CHF
+						</div>
 					</div>
 				</div>
 			</div>
 		</section>
 		<p class="errorText2" id="errorText2">
 			Oops! Server not responding. Try again later.
+		</p>
+		<p class="errorText1" id="resetText2">
+			Oops! Hit Reset before creating new charts.
 		</p>
 		<div class="chartContainer">
 			<canvas id="compChart"></canvas>
